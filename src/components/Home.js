@@ -6,8 +6,10 @@ export default function Home() {
   // 👉 STEP 5 - Build a click handler that will imperatively
   // navigate us to <website base URL>/items-list
   const history = useHistory();
-  
-  const routeToShop = () => {};
+
+  const routeToShop = () => {
+    history.push(null, null, "/items-list");
+  };
 
   return (
     <div className="home-wrapper">
