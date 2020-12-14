@@ -41,7 +41,7 @@ export default function App(props) {
       <Route path="/items-list">
         <ItemsList items={stock} />
       </Route>
-      <Route>
+      <Route path={''}>
         <Item />
       </Route>
       {/* </Switch> */}
