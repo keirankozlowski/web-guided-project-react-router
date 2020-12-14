@@ -9,6 +9,8 @@ import './styles.less'
 
 // 👉 STEP 1 - Import React Router's Router
 
+import { Router } from 'react-router-dom'
+
 render(
   // Wrap the <App /> in a provider
   <App />
