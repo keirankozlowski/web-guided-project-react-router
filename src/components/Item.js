@@ -1,6 +1,6 @@
 import React from "react";
 // We'll need quite a few imports from react-router-dom
-import { useParams, NavLink, useRouteMatch } from "react-router-dom";
+import { useParams, NavLink, useRouteMatch, Route } from "react-router-dom";
 import ItemDetails from "./ItemDetails";
 
 export default function Item(props) {
@@ -34,12 +34,18 @@ export default function Item(props) {
 
       <nav className="item-sub-nav">
         {/* 👉 STEP 8 - Here go the NavLinks to `<current url>/shipping` and `<current url>/description` */}
-        <NavLink to={`${url}/description`}>description</NavLink>
+        <NavLink to={`${url}/description`}>Description</NavLink>
         <NavLink to={`${url}/shipping`}>Shipping</NavLink>
       </nav>
 
       {/* 👉 STEP 9 - Here go the Routes for `<current path>/shipping` and `<current path>/description` */}
       {/* These Routes should render <ItemDetails /> */}
+      <Route>
+      <Item
+      </Route>
+      <Route>
+
+      </Route>
 
       {/* 👉 STEP 10 - Shorten paths and urls with `useRouteMatch` hook */}
     </div>
