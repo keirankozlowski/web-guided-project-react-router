@@ -42,7 +42,7 @@ export default function App(props) {
         <ItemsList items={stock} />
       </Route>
       <Route path={"/items-list/:itemId"}>
-        <Item />
+        <Item items={stock} />
       </Route>
       {/* </Switch> */}
     </div>
