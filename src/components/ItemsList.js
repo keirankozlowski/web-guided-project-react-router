@@ -11,13 +11,14 @@ export default function ItemsList(props) {
       {items.map((item) => (
         <div className="item-card" key={item.id}>
           {/* 👉 STEP 6 - Link starts, navigates us from <current url> to <current url>/<id of the item> */}
-
-          <img
-            className="items-list-image"
-            src={item.imageUrl}
-            alt={item.name}
-          />
-          <p>{item.name}</p>
+          <Link to="/">
+            <img
+              className="items-list-image"
+              src={item.imageUrl}
+              alt={item.name}
+            />
+            <p>{item.name}</p>
+          </Link>
           {/* Link ends */}
 
           <p>${item.price}</p>
