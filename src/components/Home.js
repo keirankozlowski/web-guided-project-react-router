@@ -8,7 +8,7 @@ export default function Home() {
   const history = useHistory();
 
   const routeToShop = () => {
-    history.push(null, null, "/items-list");
+    history.push("/items-list");
   };
 
   return (
