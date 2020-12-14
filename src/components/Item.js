@@ -12,7 +12,7 @@ export default function Item(props) {
   // Beware! The JSX is expecting 'item' to exist instantly!
   // we use this hook to grab they dynamic parts of the path (:itemID).
   const { itemID } = useParams();
-  console.log('this is the it')
+  console.log("this is the itemID from the URL", itemID);
   const item = {};
 
   return (
