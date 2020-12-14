@@ -11,12 +11,12 @@ export default function Item(props) {
   // Beware! The ids are integers, whereas URL parameters are strings.
   // Beware! The JSX is expecting 'item' to exist instantly!
   // we use this hook to grab they dynamic parts of the path (:itemID).
-  const { itemID } = useParams();
-  console.log("this is the itemID from the URL", itemID);
+  const { itemId } = useParams();
+  console.log("this is the itemID from the URL", itemId);
 
   const item =
     items.find((item) => {
-      return item.id == itemID;
+      return item.id == itemId;
     }) || {};
 
   return (
