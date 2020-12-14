@@ -34,7 +34,7 @@ export default function App(props) {
       </nav>
 
       {/* 👉 STEP 4 - Build a Switch with a Route for each of the components imported at the top */}
-      <Route>
+      <Route path="/">
         <Home />
       </Route>
     </div>
